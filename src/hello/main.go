@@ -6,10 +6,17 @@ import (
 )
 
 func main() {
-	if len(os.Args) > 1 {
-		fmt.Println(os.Args[1])
+	var message string
+	message = "Hello, I am Gopher"
+	// type inference
+	// args := os.Args
+	var args []string
+	args = os.Args
+
+	if len(args) > 1 {
+		fmt.Println(args[1])
 	} else {
-		fmt.Println("Hello, I am Gophoer")
+		fmt.Println(message)
 	}
 }
 
