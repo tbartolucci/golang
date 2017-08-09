@@ -3,6 +3,7 @@ package main
 type gopher struct {
 	name string
 	age int
+	isAdult bool  // default is false
 }
 
 func (g gopher) jump() string {
